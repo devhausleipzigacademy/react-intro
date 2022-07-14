@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App } from "./app";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SplashPage } from "./pages/splash";
 
-const app = document.getElementById("app") as HTMLElement;
+const root = document.getElementById("root") as HTMLElement;
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App></App>
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<SplashPage />} />
+			</Routes>
+		</BrowserRouter>
 	</React.StrictMode>,
-	app
+	root
 );

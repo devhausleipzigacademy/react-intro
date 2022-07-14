@@ -33,8 +33,8 @@ export function Counter() {
 	};
 
 	return (
-		<div className="w-[200px] bg-orange-800 text-cyan-400">
-			<p>Count:{count}</p>
+		<div className="w-[200px] bg-orange-800 text-cyan-400 text-[30px]">
+			<p>Count: {count}</p>
 			<CustomButton clickHandler={reset} text="Reset" />
 			<CustomButton clickHandler={increment} text="Increment" />
 		</div>
